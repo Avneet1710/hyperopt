@@ -6,7 +6,9 @@ Hyperopt is a Python library for serial and parallel optimization over awkward s
 
 space takes a dictionary as an input and use of hp.<distribution> to supply the values it can take. Following is the best way to define the grid as suggested by the Databricks:
 
+|----------------------|--------------------------|
 | Hyperparameter Type	| Suggested Hyperopt range |
+|:--------------------|-------------------------:|
 | Maximum depth, number of trees, max 'bins' in Spark ML decision trees	| hp.quniform with min >= 1 |
 | Learning rate	hp.loguniform with | max = 0 |
 | Regularization strength	| hp.uniform with min = 0 or hp.loguniform |
